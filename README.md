@@ -84,6 +84,7 @@ type Client interface {
 	ReadFile(name string) ([]byte, error)
 	WriteFile(name string, contents []byte) error
 	RemoveAll(path string) error
+    ReadDir(name string) ([]os.DirEntry, error)
 }
 ```
 
